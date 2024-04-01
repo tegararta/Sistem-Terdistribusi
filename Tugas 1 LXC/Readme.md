@@ -7,11 +7,11 @@
   
   
   ## persiapan server host 
-    ```sudo apt install -y build-essential linux-headers-$(uname -r)```
+  ```sudo apt install -y build-essential linux-headers-$(uname -r)```
     
-    ![assets/gambar2.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss2.png)
+  ![assets/gambar2.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss2.png)
     
-    jika error menggunakan poin 2
+  jika error menggunakan poin 2
   
   ## mengganti sources list ubuntu 
   
@@ -43,7 +43,8 @@
   sudo apt update
   ```
   
-  3.  LXC
+  ##  LXC
+  LXC (Linux Containers) adalah sebuah teknologi virtualisasi yang memungkinkan Anda untuk menjalankan beberapa lingkungan Linux terisolasi (container) di dalam satu host Linux. Kontainer ini berbagi kernel yang sama dengan host mereka, tetapi terisolasi dari kontainer lainnya.
   - install
   ```jsx
   sudo apt-get install lxc lxctl lxc-templates net-tools  
@@ -60,7 +61,9 @@
     ```
     ![assets/gambar5.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss5.png)
   
-  4. Nginx
+  ## Case 1
+  
+  1. Nginx
      - install
        ```jsx
         sudo apt install nginx nginx-extras 
