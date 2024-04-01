@@ -45,11 +45,58 @@ lalu update
 sudo apt update
 ```
 
-3. install lxc 
-
+3.  LXC
+- install
 ```jsx
 sudo apt-get install lxc lxctl lxc-templates net-tools  
 ```
 ![assets/gambar4.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss4.png)
 
 - sudo lxc-checkconfig
+  ```jsx
+  sudo lxc-checkconfig
+  ```
+- Menampilkan template container yang tersedia
+  ```jsx
+  sudo ls /usr/share/lxc/templates/
+  ```
+  ![assets/gambar5.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss5.png)
+
+4. Nginx
+   - install
+     ```jsx
+      sudo apt install nginx nginx-extras 
+     ```
+     ![assets/gambar7.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss7.png)
+     
+  - Konfigurasi file nginx agar bisa di akses pada web
+    1. Masuk pada Diretori nginx
+       ```jsx
+        cd /etc/nginx/sites-enable/
+       ```
+    2. Copy file **`Default`** menjadi **`sister.local`**
+       ```jsx
+        sudo cp Default sister.local
+       ```
+    3. Lalu edit file menggunakan apk `nano` , tambahkan `server name sister.local`
+       ```jsx
+        sudo nano sister.local
+       ``` 
+       - Setelah di edit
+         ![assets/gambar8.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss8.png)
+
+         lalu save, dan menjalankan konfigurasinya
+         ```jsx
+          sudo nginx -t
+          sudo nginx -s reload
+         ``` 
+
+    4. Masuk pada Diretori `/var/www/html`
+       ```jsx
+          cd /var/www/html
+         ```
+       - Copy file `index.nginx-debian.html` menjadi `index.html`
+         ```
+          sudo cp index.nginx-debian.html index.html
+         ```
+       
