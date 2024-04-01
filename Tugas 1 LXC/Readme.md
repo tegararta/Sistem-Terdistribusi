@@ -1,4 +1,4 @@
-## Sistem Terdistribusi
+# Sistem Terdistribusi
 
   instalasi vm [https://ciperx.com/install-ubuntu-server/](https://ciperx.com/install-ubuntu-server/)
   
@@ -6,16 +6,14 @@
   ![assets/gambar1.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss1.png)
   
   
-  1. persiapan server host 
+  ## persiapan server host 
+    ```sudo apt install -y build-essential linux-headers-$(uname -r)```
+    
+    ![assets/gambar2.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss2.png)
+    
+    jika error menggunakan poin 2
   
-  ```jsx
-  sudo apt install -y build-essential linux-headers-$(uname -r)
-  ```
-  ![assets/gambar2.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss2.png)
-  
-  jika error menggunakan poin 2
-  
-  2. mengganti sources list ubuntu 
+  ## mengganti sources list ubuntu 
   
   ```jsx
   sudo nano /etc/apt/sources.list
