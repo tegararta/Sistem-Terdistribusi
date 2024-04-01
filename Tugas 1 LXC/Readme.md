@@ -34,7 +34,7 @@ deb http://archive.canonical.com/ubuntu/ jammy partner
 deb-src http://archive.canonical.com/ubuntu/ jammy partner
 ```
 
-![Screenshot (106).png](https://github.com/3milia123/Sistem-Terdistribusi/blob/main/Tugas1/Image/e401e93d-3a1e-4a50-8f36-086d2d4420d4.png)
+Photo
 
 ```jsx
 sudo apt update
@@ -44,6 +44,10 @@ sudo apt update
 sudo apt upgrade -y
 ```
 
-![Screenshot (108).png](https://github.com/3milia123/Sistem-Terdistribusi/blob/main/Tugas1/Image/Screenshot_(108).png)
+Photo
 
 3. install lxc 
+
+```jsx
+sudo apt-get install lxc lxctl lxc-templates net-tools  
+```
