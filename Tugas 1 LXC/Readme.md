@@ -62,8 +62,13 @@
     ![assets/gambar5.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss5.png)
   
   ## Case 1
-  
-  1. Nginx
+  <p align="center">
+  <img src="https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Contoh1.png" alt="">
+  </p>
+
+  Membuat web server dengan nama `sister.local` pada server ubuntu yang di buat tadi
+
+1. Nginx
      - install
        ```jsx
         sudo apt install nginx nginx-extras 
@@ -92,7 +97,7 @@
             sudo nginx -s reload
            ``` 
   
-       4. Masuk pada Diretori `/var/www/html`
+2. Masuk pada Diretori `/var/www/html`
           ```jsx
             cd /var/www/html
            ```
@@ -103,10 +108,15 @@
          - Edit file `index.html`
             ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
 
-       5. Edit pada file `host` pada directory `C:\Windows\System32\drivers\etc` menggunakan `Notepad` Run Administator
-           ``
+3. Edit pada file `host` pada directory `C:\Windows\System32\drivers\etc` menggunakan `Notepad` Run Administator
+         ```
           Tambahkan `127.0.0.1       sister.local`
-          ``
+          ```
           - Lalu jalankan domain `sister.local` pada web
-            ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/result.png) 
+            ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/result.png)
+
+## Case 2
+  <p align="center">
+  <img src="https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Contoh1.png" alt="">
+  </p>
          
