@@ -117,6 +117,8 @@
 
 ## Case 2
   <p align="center">
-  <img src="https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Contoh1.png" alt="">
+  <img src="https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Contoh2.png" alt="">
   </p>
+
+  Membuat web server dengan menambahkan microservices ubuntu 20 untuk `sister.local/blog`, lalu microservices ubuntu 18 untuk `sister.local/about-us`
          
