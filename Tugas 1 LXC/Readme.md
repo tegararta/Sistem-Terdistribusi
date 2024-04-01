@@ -1,0 +1,49 @@
+## Sistem Terdistribusi
+
+instalasi vm [https://ciperx.com/install-ubuntu-server/](https://ciperx.com/install-ubuntu-server/)
+
+
+1. persiapan server host 
+
+```jsx
+sudo apt install -y build-essential linux-headers-$(uname -r)
+```
+
+2. mengganti sources list ubuntu 
+
+```jsx
+sudo nano /etc/apt/sources.list
+```
+
+menjadi 
+
+```jsx
+deb http://archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse
+
+deb http://archive.canonical.com/ubuntu/ jammy partner
+deb-src http://archive.canonical.com/ubuntu/ jammy partner
+```
+
+![Screenshot (106).png](https://github.com/3milia123/Sistem-Terdistribusi/blob/main/Tugas1/Image/e401e93d-3a1e-4a50-8f36-086d2d4420d4.png)
+
+```jsx
+sudo apt update
+```
+
+```jsx
+sudo apt upgrade -y
+```
+
+![Screenshot (108).png](https://github.com/3milia123/Sistem-Terdistribusi/blob/main/Tugas1/Image/Screenshot_(108).png)
+
+3. install lxc 
