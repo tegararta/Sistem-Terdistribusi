@@ -2,6 +2,10 @@
 
 instalasi vm [https://ciperx.com/install-ubuntu-server/](https://ciperx.com/install-ubuntu-server/)
 
+Server WSL ubuntu yang telah di buat
+![images/gambar1.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss1.png)
+
+
 
 1. persiapan server host 
 
