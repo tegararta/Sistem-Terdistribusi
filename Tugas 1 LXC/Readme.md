@@ -124,11 +124,11 @@
 
   - Microservice 1
     ``` jsx
-    sudo lxc-create -n ubuntu_php7.4 -t download -- --dist ubuntu --release force --arch amd64 --force-cache --server images.linuxcontainers.org
+    sudo lxc-create -n microservice1 -t download -- --dist ubuntu --release force --arch amd64 --force-cache --server images.linuxcontainers.org
     ```
   - Microservice 2
     ``` jsx
-    sudo lxc-create -n ubuntu_php7.4 -t download -- --dist ubuntu --release bionic --arch amd64 --force-cache --server images.linuxcontainers.org
+    sudo lxc-create -n microservice2 -t download -- --dist ubuntu --release bionic --arch amd64 --force-cache --server images.linuxcontainers.org
     ```
     
          
