@@ -121,4 +121,14 @@
   </p>
 
   Membuat web server dengan menambahkan microservices ubuntu 20 untuk `sister.local/blog`, lalu microservices ubuntu 18 untuk `sister.local/about-us`
+
+  - Microservice 1
+    ``` jsx
+    sudo lxc-create -n ubuntu_php7.4 -t download -- --dist ubuntu --release force --arch amd64 --force-cache --server images.linuxcontainers.org
+    ```
+  - Microservice 2
+    ``` jsx
+    sudo lxc-create -n ubuntu_php7.4 -t download -- --dist ubuntu --release bionic --arch amd64 --force-cache --server images.linuxcontainers.org
+    ```
+    
          
