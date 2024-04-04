@@ -152,8 +152,71 @@
      ```
      ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
 
-3. Ubah Ip ke static agar tidak berubah-ubah
-    
+3. Ubah Ip LXC ke static agar tidak berubah-ubah
+    - Masuk ke directory `netplan` akses file `10-lxc.yaml`
+      ```
+      sudo nano /etc/netplan/10-lxc.yaml
+      ```
+      - Example:
+        ```
+        network:
+          version: 2
+          renderer: networkd
+          ethernets:
+            ens3:
+              dhcp4: no
+              addresses:
+                - 10.0.3.2/24
+              gateway4: 10.0.3.1
+              nameservers:
+                  addresses: [8.8.8.8, 1.1.1.1]
+          ```
+    ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
+
+4. Konfigurasi *`nginx`* dengan *microservice1* = `mcsv1.local` bagian /blog dan *microservice2* = `mcsv2.local` bagian /about-us
+   - Masuk pada Diretori nginx
+     ```jsx
+      cd /etc/nginx/sites-enable/
+     ```
+  - Copy file **`Default`** dan edit  tambahkan `server name mcvs1/mvsc2.local`
+    - Microservice1
+      ```jsx
+        sudo cp Default mcsv1.local
+        sudo nano mcsv1.local
+      ```
+    - Microservice2
+      ```jsx
+        sudo cp Default mcsv2.local
+        sudo nano mcsv1.local
+      ```
+      ![assets/gambar8.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss8.png)
+  
+  - lalu save, dan menjalankan konfigurasinya
+    ```jsx
+    sudo nginx -t
+    sudo nginx -s reload
+    ```
+
+5. Masuk pada Diretori `/var/www/html` dan edit *index.html*
+   ```jsx
+     cd /var/www/html
+     sudo cp index.nginx-debian.html index.html
+     sudo nano index.html
+   ```
+  ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
+
+6. Edit file `/etc/hosts` agar bisa di akses di web dengan nama domain yang di buat
+   ```
+     sudo nano /etc/hosts
+     ```
+   - Web-server
+     tambahkan *ip* dan nama *server*-nya dari masing-masing microservice yang di buat
+     
+     ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
+
+   - Microservice 1 dan 2 tidak lupa tambahkan dengan ip localhost 
+      ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
+     
     
   
     
