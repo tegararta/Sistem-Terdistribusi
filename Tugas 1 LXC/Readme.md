@@ -124,11 +124,19 @@
 
   - Microservice 1
     ``` jsx
-    sudo lxc-create -n microservice1 -t download -- --dist ubuntu --release force --arch amd64 --force-cache --server images.linuxcontainers.org
+    sudo lxc-create -t download -n microservice2 -- -d ubuntu -r bionic -a amd64 --force-cache
     ```
   - Microservice 2
     ``` jsx
-    sudo lxc-create -n microservice2 -t download -- --dist ubuntu --release bionic --arch amd64 --force-cache --server images.linuxcontainers.org
+    sudo lxc-create -t download -n microservice2 -- -d ubuntu -r bionic -a amd64 --force-cache
     ```
+  - Cek Container LXC yang sudah di buat
+    ``` jsx
+    sudo lxc-ls -f
+    ```
+    ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot from 2024-04-04 11-52-53.png)
+
+    
+  
     
          
