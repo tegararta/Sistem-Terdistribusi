@@ -120,22 +120,40 @@
   <img src="https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Contoh2.png" alt="">
   </p>
 
-  Membuat web server dengan menambahkan microservices ubuntu 20 untuk `sister.local/blog`, lalu microservices ubuntu 18 untuk `sister.local/about-us`
+1. Membuat web server dengan menambahkan microservices ubuntu 20 untuk `sister.local/blog`, lalu microservices ubuntu 18 untuk `sister.local/about-us`
+    - Microservice 1
+      ``` jsx
+      sudo lxc-create -t download -n microservice1 -- -d ubuntu -r bionic -a amd64 --force-cache
+      sudo lxc-start -n microservice1
+      ```
+    - Microservice 2
+      ``` jsx
+      sudo lxc-create -t download -n microservice2 -- -d ubuntu -r bionic -a amd64 --force-cache
+      sudo lxc-start -n microservice2
+      ```
+    - Melihat info dari LXC 
+      ``` jsx
+      sudo lxc-ls -f
+      ```
+      ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
 
-  - Microservice 1
-    ``` jsx
-    sudo lxc-create -t download -n microservice2 -- -d ubuntu -r bionic -a amd64 --force-cache
-    ```
-  - Microservice 2
-    ``` jsx
-    sudo lxc-create -t download -n microservice2 -- -d ubuntu -r bionic -a amd64 --force-cache
-    ```
-  - Cek Container LXC yang sudah di buat
-    ``` jsx
-    sudo lxc-ls -f
-    ```
-    ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
+2. Jalankan LXC dengan membuka 2 terminal baru,jalankan menggunakan `lxc-attach ` dan update setelah itu  instal `nginx` pada masing-masing lxc
+   - Microservice 1
+     ``` jsx
+     sudo lxc-attach -n microservice1
+     sudo update && upgrade -y
+     sudo apt install nginx nginx-extras
+     ```
+   - Microservice 2
+     ```jsx
+     sudo lxc-attach -n microservice1
+     sudo update && upgrade -y
+     sudo apt install nginx nginx-extras
+     ```
+     ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
 
+3. Ubah Ip ke static agar tidak berubah-ubah
+    
     
   
     
