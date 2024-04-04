@@ -171,7 +171,7 @@
               nameservers:
                   addresses: [8.8.8.8, 1.1.1.1]
           ```
-    ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
+          ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
 
 4. Konfigurasi *`nginx`* dengan *microservice1* = `mcsv1.local` bagian /blog dan *microservice2* = `mcsv2.local` bagian /about-us
    - Masuk pada Diretori nginx
@@ -203,7 +203,7 @@
      sudo cp index.nginx-debian.html index.html
      sudo nano index.html
    ```
-  ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
+    ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
 
 6. Edit file `/etc/hosts` agar bisa di akses di web dengan nama domain yang di buat
    ```
@@ -211,13 +211,16 @@
      ```
    - Web-server
      tambahkan *ip* dan nama *server*-nya dari masing-masing microservice yang di buat
+       ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
+
+     - Tambakan Route pada `/blog` dan `/about-us` pada *sister.local* pada *web-server*
+       ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
      
-     ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
 
    - Microservice 1 dan 2 tidak lupa tambahkan dengan ip localhost 
       ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
      
-    
+7. Akses Website `sister.local/blog` atau `sister.local/about-us` untuk melihat hasilnya
   
     
          
