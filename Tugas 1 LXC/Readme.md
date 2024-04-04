@@ -135,7 +135,7 @@
       ``` jsx
       sudo lxc-ls -f
       ```
-      ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
+      ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2012-03-06.png)
 
 2. Jalankan LXC dengan membuka 2 terminal baru,jalankan menggunakan `lxc-attach ` dan update setelah itu  instal `nginx` pada masing-masing lxc
    - Microservice 1
@@ -150,7 +150,7 @@
      sudo update && upgrade -y
      sudo apt install nginx nginx-extras
      ```
-     ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
+     ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2012-10-57.png)
 
 3. Ubah Ip LXC ke static agar tidak berubah-ubah
     - Masuk ke directory `netplan` akses file `10-lxc.yaml`
@@ -171,7 +171,7 @@
               nameservers:
                   addresses: [8.8.8.8, 1.1.1.1]
           ```
-          ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
+          ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2019-54-50.png)
 
 4. Konfigurasi *`nginx`* dengan *microservice1* = `mcsv1.local` bagian /blog dan *microservice2* = `mcsv2.local` bagian /about-us
    - Masuk pada Diretori nginx
