@@ -134,7 +134,7 @@
     ``` jsx
     sudo lxc-ls -f
     ```
-    ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot from 2024-04-04 11-52-53.png)
+    ![assets/gambar10.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2011-52-53.png)
 
     
   
