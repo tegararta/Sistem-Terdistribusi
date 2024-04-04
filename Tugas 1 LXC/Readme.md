@@ -189,7 +189,7 @@
         sudo cp Default mcsv2.local
         sudo nano mcsv1.local
       ```
-      ![assets/gambar8.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss8.png)
+      ![assets/gambar8.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-05%2003-19-49.png)
   
   - lalu save, dan menjalankan konfigurasinya
     ```jsx
@@ -203,7 +203,7 @@
      sudo cp index.nginx-debian.html index.html
      sudo nano index.html
    ```
-    ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
+    ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2020-02-06.png)
 
 6. Edit file `/etc/hosts` agar bisa di akses di web dengan nama domain yang di buat
    ```
@@ -211,16 +211,16 @@
      ```
    - Web-server
      tambahkan *ip* dan nama *server*-nya dari masing-masing microservice yang di buat
-       ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
+       ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2020-58-53.png)
 
      - Tambakan Route pada `/blog` dan `/about-us` pada *sister.local* pada *web-server*
-       ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
+       ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-05%2003-26-20.png)
      
 
    - Microservice 1 dan 2 tidak lupa tambahkan dengan ip localhost 
-      ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/ss9.png)
+      ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-04%2020-50-46.png)
      
 7. Akses Website `sister.local/blog` atau `sister.local/about-us` untuk melihat hasilnya
-  
+   ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-05%2003-12-10.png)
     
          
