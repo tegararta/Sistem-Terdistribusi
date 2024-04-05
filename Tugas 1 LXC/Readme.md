@@ -123,7 +123,7 @@
 1. Membuat web server dengan menambahkan microservices ubuntu 20 untuk `sister.local/blog`, lalu microservices ubuntu 18 untuk `sister.local/about-us`
     - Microservice 1
       ``` jsx
-      sudo lxc-create -t download -n microservice1 -- -d ubuntu -r bionic -a amd64 --force-cache
+      sudo lxc-create -t download -n microservice1 -- -d ubuntu -r fancy -a amd64 --force-cache
       sudo lxc-start -n microservice1
       ```
     - Microservice 2
