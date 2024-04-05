@@ -222,5 +222,13 @@
      
 7. Akses Website `sister.local/blog` atau `sister.local/about-us` untuk melihat hasilnya
    ![assets/gambar9.jpg](https://github.com/tegararta/Sistem-Terdistribusi/blob/main/Tugas%201%20LXC/assets/Screenshot%20from%202024-04-05%2003-12-10.png)
-    
+
+
+## Case 3
+  <p align="center">
+  <img src="https://github.com/3milia123/Sistem-Terdistribusi/blob/main/Tugas2/Image/e7dfdf6e-1a15-4e34-a6e6-6af1406b06f9.png" alt="">
+  Menambahkan Web-server dengan nama *app.sister.local* dengan 3 Lxc menggunakan distro *Debian* versi *Bionic*
+  </p>
+
+  1.  
          
