@@ -230,5 +230,17 @@
   Menambahkan Web-server dengan nama *app.sister.local* dengan 3 Lxc menggunakan distro *Debian* versi *Bionic*
   </p>
 
-  1.  
+  1.  Install 3 lxc ditro `Debian` versi `buster` jd
+       ``` jsx
+          sudo lxc-create -n microservice3 -t download -- --dist "debian" --release "buster" –arch amd64
+          sudo lxc-create -n microservice4 -t download -- --dist "debian" --release "buster" –arch amd64
+          sudo lxc-create -n microservice5 -t download -- --dist "debian" --release "buster" –arch amd64
+       ```
+       - Microservice 1 dan 2 tidak lupa tambahkan dengan ip localhost
+          ``` jsx
+            sudo lxc-start -n microservice3
+            sudo lxc-start -n microservice4
+            sudo lxc-start -n microservice5
+          ```
+        
          
