@@ -242,5 +242,18 @@
             sudo lxc-start -n microservice4
             sudo lxc-start -n microservice5
           ```
+  2. Jalankan 3 lxc menggunakan *lxc-attach* dan install nginx
+     ``` jsx
+     sudo lxc-attach microservice3
+     sudo lxc-attach microservice4
+     sudo lxc-attach microservice5
+     ```
+     - Install *nginx*
+       ``` jsx
+       sudo update
+       sudo apt install nginx
+       ```
+       
+      
         
          
