@@ -232,9 +232,9 @@
 
   1.  Install 3 lxc ditro `Debian` versi `buster` jd
        ``` jsx
-          sudo lxc-create -n microservice3 -t download -- --dist "debian" --release "buster" –arch amd64
-          sudo lxc-create -n microservice4 -t download -- --dist "debian" --release "buster" –arch amd64
-          sudo lxc-create -n microservice5 -t download -- --dist "debian" --release "buster" –arch amd64
+          sudo lxc-create -t download -n microservice3 -- -d debian -r buster -a amd64 --force-cache
+          sudo lxc-create -t download -n microservice4 -- -d debian -r buster -a amd64 --force-cache
+          sudo lxc-create -t download -n microservice5 -- -d debian -r buster -a amd64 --force-cache
        ```
        - Microservice 1 dan 2 tidak lupa tambahkan dengan ip localhost
           ``` jsx
