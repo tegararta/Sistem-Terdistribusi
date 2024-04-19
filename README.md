@@ -1,3 +1,2 @@
 # Sistem-Terdistribusi
-
-nanti saya push pak, mohon maaf keterlambatannya
+Tugas saya jadikan 1 di folder Tugas 1 LXC
